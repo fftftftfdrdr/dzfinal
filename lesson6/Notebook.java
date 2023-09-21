@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Laptop {
+public class Notebook {
 
     private String name;
 
@@ -13,7 +13,7 @@ public class Laptop {
     private int price;
     private String model;
 
-    public Laptop(String name, int amountRAM, String operatingSystem, int price, String model) {
+    public Notebook(String name, int amountRAM, String operatingSystem, int price, String model) {
         this.name = name;
         this.amountRAM = amountRAM;
         this.operatingSystem = operatingSystem;
@@ -48,6 +48,7 @@ public class Laptop {
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -55,6 +56,7 @@ public class Laptop {
     public int getAmountRAM() {
         return amountRAM;
     }
+
     public void setAmountRAM(int amountRAM) {
         this.amountRAM = amountRAM;
     }
@@ -62,6 +64,7 @@ public class Laptop {
     public String getOperatingSystem() {
         return operatingSystem;
     }
+
     public void setOperatingSystem(String operatingSystem) {
         this.operatingSystem = operatingSystem;
     }
@@ -69,6 +72,7 @@ public class Laptop {
     public int getPrice() {
         return price;
     }
+
     public void setPrice(int price) {
         this.price = price;
     }
@@ -76,6 +80,7 @@ public class Laptop {
     public String getModel() {
         return model;
     }
+
     public void setModel(String model) {
         this.model = model;
     }

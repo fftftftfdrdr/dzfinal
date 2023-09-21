@@ -1,20 +1,21 @@
+
 import java.util.*;
 
-public class Filter {
+public class OperationWithNotebook {
 
-    private Set<Laptop> notebooks = new HashSet<>();
+    private Set<Notebook> notebooks = new HashSet<>();
     private List<Criterion> criterionList = new ArrayList<>();
     private static Scanner scanner = new Scanner(System.in);
 
     public void printList(){
-        for (Laptop notebook : notebooks){
+        for (Notebook notebook : notebooks){
             if (notebookIsCorrect(notebook)){
                 System.out.println(notebook);
             }
         }
     }
 
-    public boolean notebookIsCorrect(Laptop notebook){
+    public boolean notebookIsCorrect(Notebook notebook){
 
         for (Criterion criterion : criterionList){
             Object valueNotebook = null;
@@ -48,12 +49,12 @@ public class Filter {
 
         return true;
     }
-    public Filter(Set<Laptop> notebooks) {
+    public OperationWithNotebook(Set<Notebook> notebooks) {
         this.scanner = new Scanner(System.in);
         this.notebooks = notebooks;
     }
 
-    public Filter(Set<Laptop> notebooks, List<Criterion> criterionList) {
+    public OperationWithNotebook(Set<Notebook> notebooks, List<Criterion> criterionList) {
         this.scanner = new Scanner(System.in);
         this.notebooks = notebooks;
         this.criterionList = criterionList;
@@ -242,4 +243,5 @@ class Criterion {
         return new Criterion(property, isQuantitative, getValue, null, null);
 }
 
+}
 }
